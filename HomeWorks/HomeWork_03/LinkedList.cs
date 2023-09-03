@@ -96,7 +96,7 @@ namespace LinkedList
                 node = node.next;
             }
         }
-
+        //Метод разворота
         public void Reverse(){
             if(head == null){
                 return;
@@ -114,7 +114,7 @@ namespace LinkedList
             }
             head = newHead;
         }
-
+        //Метод помощник для Reverse
         private Node FindLastNode(){
             if(head == null)
                 return null;
