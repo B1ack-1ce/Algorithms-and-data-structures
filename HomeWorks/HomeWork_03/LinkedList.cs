@@ -52,11 +52,11 @@ namespace LinkedList
             while(node.next != null){
                 if(node.next.next == null){
                     node.next = null;
+                    count--;
                     return;
                 }
                 node = node.next;
             }
-            count--;
         }
 
         public bool Contains(T value){
